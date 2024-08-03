@@ -6,11 +6,11 @@ services:
       context: ./public_api  
       dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "8001:8001"
 
   private_api:
     build:
       context: ./private_api
       dockerfile: Dockerfile
     ports:
-      - "8001:8001"
+      - "8000:8000"
