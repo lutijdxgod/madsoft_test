@@ -1,9 +1,7 @@
 from typing import List
-from fastapi import APIRouter, Depends, File, Form, Response, UploadFile, status, HTTPException
+from fastapi import APIRouter, Depends, File, Response, UploadFile, status, HTTPException
 from sqlalchemy.orm import Session
 from .. import database, schemas, models, utils
-from ..config import settings
-import httpx
 
 
 router = APIRouter(prefix="/memes", tags=["Memes"])
